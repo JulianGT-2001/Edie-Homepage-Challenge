@@ -1,95 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
+<html lang="es">
 
-    <link rel="icon" href="devchallenges.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5" />
+  <link rel="icon" href="static/img/devchallenges.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Style Css -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <title>Edie Homepage</title>
+</head>
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
+<body>
+  <header>
+    <div class="header__logo">
+      <p>Edie</p>
+    </div>
+    <nav class="header__navigation">
       <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#ourWorks">Our Works</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="main__title">
+      <a href="#">Unhappy with your website?</a>
+      <h1>We create beautiful <br>
+        and fast web services</h1>
+    </div>
+    <figure class="main__image">
+      <img src="static/img/heroImage.jpg" alt="person1"/>
+    </figure>
+    <div class="main__contact">
+      <div class="main__contactTitle">
+        <h1>Story, emotion and purpose</h1>
+      </div>
+      <div class="main__contactDescription">
+        <p>
+          We help transform your ideas into real<br>
+           world applications that will outperform<br>
+           your toughest competition and help you<br>
+            achieve your strategic goals in short<br>
+            period of time.
+          </p>
+      </div>
+      <div class="main__contactInput">
+        <label for="">Want us to contact you?</label>
+        <input type="text" class="main__input" placeholder="Email"/>
+        <button type="submit" class="main__button">Join</button>
+      </div>
+    </div>
+    <div class="main__services" id="services">
+      <div class="main__servicesTitle">
+        <h3>We offer high demand services</h3>
+      </div>
+      <div class="main__cardServices">
+        <div class="main__iconCard">
+          <span class="material-symbols-outlined">
+            edit
+          </span>
+        </div>
+        <div class="main__cardTitle">
+          <h4>UI/UX Design</h4>
+        </div>
+        <div class="main__cardDescription">
+          Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Duis a <br> metus ac nulla consequat aliquet <br> id quis turpis.
+        </div>
+        <div class="main__cardButton">
+          <button type="submit" class="main__cardbutton">Get started</button>
+        </div>
+      </div>
+      <div class="main__cardServices">
+        <div class="main__iconCard">
+          <span class="material-symbols-outlined">
+            code
+          </span>
+        </div>
+        <div class="main__cardTitle">
+          <h4>Front End</h4>
+        </div>
+        <div class="main__cardDescription">
+          Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Duis a <br> metus ac nulla consequat aliquet <br> id quis turpis.
+        </div>
+        <div class="main__cardButton">
+          <button type="submit" class="main__cardbutton">Get started</button>
+        </div>
+      </div>
+      <div class="main__cardServices">
+        <div class="main__iconCard">
+          <span class="material-symbols-outlined">
+            storage
+          </span>
+        </div>
+        <div class="main__cardTitle">
+          <h4>Back End</h4>
+        </div>
+        <div class="main__cardDescription">
+          Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Duis a <br> metus ac nulla consequat aliquet <br> id quis turpis.
+        </div>
+        <div class="main__cardButton">
+          <button type="submit" class="main__cardbutton">Get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="main__business" id="ourWorks">
+      <div class="main__businessTitle">
+        <h3>Good designs means good business</h3>
+      </div>
+      <div class="main__businessimages">
+        <div class="main__businesshome">
+          <figure>
+            <img src="static/img/smarthome.jpg" alt="Smart Home">
+          </figure>
+          <legend>Full stack application</legend>
+          <p>Smart home dashboard</p>
+        </div>
+        <div class="main__businessonboard">
+          <figure>
+            <img src="static/img/onboard.png" alt="OnBoard">
+          </figure>
+          <legend>UX/UI design</legend>
+          <p>Onboard application</p>
+        </div>
+        <div class="main__businessonbooking">
+          <figure>
+            <img src="static/img/booking.png" alt="Booking">
+          </figure>
+          <legend>Mobile application</legend>
+          <p>Booking system</p>
+        </div>
+        <div class="main__businessonjuice">
+          <figure>
+            <img src="static/img/juice-product.png" alt="Juice Product">
+          </figure>
+          <legend>Front End application</legend>
+          <p>Juice product homepage</p>
+        </div>
+        <div class="main__businessmore">
+          <a href="#">see more -></a>
+        </div>
+      </div>
+    </div>
+    <div class="main__team" id="clients">
+      <div class="main__teamDescription">
+        <div class="main__teamTitle">
+          <div class="main__teamTitle1">
+            <p>Meet the team</p>
+          </div>
+          <div class="main__teamTitle2">
+            <h4>We are chilled and a laidback team</h4>
+          </div>
+        </div>
+        <div class="main__teamDescription">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="main__teamImages">
+        <figure>
+          <img src="static/img/person1.png" alt="Person 1">
+        </figure>
+        <figure>
+          <img src="static/img/person2.png" alt="Person 2">
+        </figure>
+        <figure>
+          <img src="static/img/person3.png" alt="Person 3">
+        </figure>
+      </div>
+    </div>
+    <div class="main__gatsby">
+      <div class="main__phrase">
+        <h3>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h3>
+      </div>
+      <div class="main__decorategatsby">
+        <figure>
+          <img src="static/img/person4.png" alt="Person 4">
+        </figure>
+        <h4>Carlos Tran</h4>
+        <p>The Decorate Gatsby</p>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="footer__menu">
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Our Works</li>
+        <li>Clients</li>
+        <li>Contact</li>
       </ul>
     </div>
-  </body>
+    <div class="footer__socialNetworks">
+      <div class="footer__logo">
+        Edie
+      </div>
+      <div class="footer__icons">
+        <i class="ph ph-instagram-logo"></i>
+        <i class="ph ph-linkedin-logo"></i>
+        <i class="ph ph-twitter-logo"></i>
+      </div>
+    </div>
+    <div class="footer__contact">
+      <label for="">Want us to contact you</label>
+      <input type="text" name="" id="">
+      <button type="submit">Join</button>
+    </div>
+    <div class="footer__credits">
+      created by JulianGT-2001 - devChallenges.io
+    </div>
+  </footer>
+</body>
+<script src="static/js/script.js"></script>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
 </html>
